@@ -1,0 +1,268 @@
+Data loaded successfully.
+
+Column Names in Logon Data: Index(['id', 'date', 'user', 'pc', 'activity'], dtype='object')
+Column Names in Email Data: Index(['Unnamed: 0', 'id', 'date', 'user', 'pc', 'to', 'cc', 'bcc', 'from',
+       'size', 'attachments', 'content'],
+      dtype='object')
+Column Names in Device Data: Index(['id', 'date', 'user', 'pc', 'activity'], dtype='object')
+Column Names in File Data: Index(['id', 'date', 'user', 'pc', 'filename', 'content'], dtype='object')
+Column Names in Psychometric Data: Index(['employee_name', 'user_id', 'O', 'C', 'E', 'A', 'N'], dtype='object')
+
+Numerical columns in Logon Data: Index(['logon_time_category', 'off_hours_logon'], dtype='object')
+Numerical columns in Email Data: Index(['Unnamed: 0', 'size', 'attachments', 'email_length', 'num_recipients',
+       'off_hours_email'],
+      dtype='object')
+Numerical columns in Device Data: Index(['off_hours_connection'], dtype='object')
+Numerical columns in File Data: Index(['file_size', 'off_hours_file_access'], dtype='object')
+Numerical columns in Psychometric Data: Index(['O', 'C', 'E', 'A', 'N'], dtype='object')
+
+Logon Data after Preprocessing:
+                         id                date     user       pc activity  \
+0  {X1D9-S0ES98JV-5357PWMI} 2010-02-01 06:49:00  NGF0157  PC-6056    Logon   
+1  {G2B3-L6EJ61GT-2222RKSO} 2010-02-01 06:50:00  LRR0148  PC-4275    Logon   
+2  {U6Q3-U0WE70UA-3770UREL} 2010-02-01 06:53:04  LRR0148  PC-4124    Logon   
+3  {I0N5-R7NA26TG-6263KNGM} 2010-02-01 07:00:00  IRM0931  PC-7188    Logon   
+4  {D1S0-N6FH62BT-5398KANK} 2010-02-01 07:00:00  MOH0273  PC-6699    Logon   
+
+   logon_time_category  off_hours_logon  
+0             0.437886         1.179157  
+1             0.437886         1.179157  
+2             0.437886         1.179157  
+3             0.437886         1.179157  
+4             0.437886         1.179157  
+
+Email Data after Preprocessing:
+   Unnamed: 0                        id                date     user       pc  \
+0   -1.727095  {R3I7-S4TX96FG-8219JWFF} 2010-02-01 07:11:45  LAP0338  PC-5758   
+1   -1.717169  {R0R9-E4GL59IK-2907OSWJ} 2010-02-01 07:12:16  MOH0273  PC-6699   
+2   -1.707243  {G2B2-A8XY58CP-2847ZJZL} 2010-02-01 07:13:00  LAP0338  PC-5758   
+3   -1.697318  {A3A9-F4TH89AA-8318GFGK} 2010-02-01 07:13:17  LAP0338  PC-5758   
+4   -1.687392  {E8B7-C8FZ88UF-2946RUQQ} 2010-02-01 07:13:28  MOH0273  PC-6699   
+
+                                                  to  \
+0  Dean.Flynn.Hines@dtaa.com;Wade_Harrison@lockhe...   
+1                        Odonnell-Gage@bellsouth.net   
+2                         Penelope_Colon@netzero.com   
+3                          Judith_Hayden@comcast.net   
+4  Bond-Raymond@verizon.net;Alea_Ferrell@msn.com;...   
+
+                                cc                            bcc  \
+0  Nathaniel.Hunter.Heath@dtaa.com  Arthur.Jacob.Raymond@dtaa.com   
+1        Hollee_Becker@hotmail.com  Arthur.Jacob.Raymond@dtaa.com   
+2        Hollee_Becker@hotmail.com  Arthur.Jacob.Raymond@dtaa.com   
+3        Hollee_Becker@hotmail.com  Arthur.Jacob.Raymond@dtaa.com   
+4        Hollee_Becker@hotmail.com    Odonnell-Gage@bellsouth.net   
+
+                         from      size  attachments  \
+0   Lynn.Adena.Pratt@dtaa.com -0.418350    -0.506976   
+1         MOH68@optonline.net  0.015103    -0.506976   
+2  Lynn_A_Pratt@earthlink.net -0.107385    -0.506976   
+3  Lynn_A_Pratt@earthlink.net -0.831879    -0.506976   
+4         MOH68@optonline.net -1.315508    -0.506976   
+
+                                             content  email_length  \
+0  middle f2 systems 4 july techniques powerful d...      1.382083   
+1  the breaking called allied reservations former...     -0.722398   
+2  slowly this uncinus winter beneath addition ex...     -1.038070   
+3  400 other difficult land cirrocumulus powered ...     -0.091053   
+4  this kmh october holliswood number advised unu...      0.014171   
+
+   num_recipients  off_hours_email  
+0        0.096332         3.764826  
+1       -0.788401         3.764826  
+2       -0.788401         3.764826  
+3       -0.788401         3.764826  
+4        0.981065         3.764826  
+
+Device Data after Preprocessing:
+                         id                date     user       pc    activity  \
+0  {J1S3-L9UU75BQ-7790ATPL} 2010-02-01 07:21:06  MOH0273  PC-6699     Connect   
+1  {N7B5-Y7BB27SI-2946PUJK} 2010-02-01 07:37:41  MOH0273  PC-6699  Disconnect   
+2  {U1V9-Z7XT67KV-5649MYHI} 2010-02-01 07:59:11  HPH0075  PC-2417     Connect   
+3  {H0Z7-E6GB57XZ-1603MOXD} 2010-02-01 07:59:49  IIW0249  PC-0843     Connect   
+4  {L7P2-G4PX02RX-7999GYOY} 2010-02-01 08:04:26  IIW0249  PC-0843  Disconnect   
+
+   off_hours_connection  
+0              2.194691  
+1              2.194691  
+2              2.194691  
+3              2.194691  
+4             -0.455645  
+
+File Data after Preprocessing:
+                         id                date     user       pc  \
+0  {L9G8-J9QE34VM-2834VDPB} 2010-02-01 07:23:14  MOH0273  PC-6699   
+1  {H0W6-L4FG38XG-9897XTEN} 2010-02-01 07:26:19  MOH0273  PC-6699   
+2  {M3Z0-O2KK89OX-5716MBIM} 2010-02-01 08:12:03  HPH0075  PC-2417   
+3  {E1I4-S4QS61TG-3652YHKR} 2010-02-01 08:17:00  HPH0075  PC-2417   
+4  {D4R7-E7JL45UX-0067XALT} 2010-02-01 08:24:57  HSB0196  PC-8001   
+
+       filename                                            content  file_size  \
+0  EYPC9Y08.doc  D0-CF-11-E0-A1-B1-1A-E1 during difficulty over...  -0.725152   
+1  N3LTSU3O.pdf  25-50-44-46-2D carpenters 25 landed strait dis...   0.442286   
+2  D3D3WC9W.doc  D0-CF-11-E0-A1-B1-1A-E1 union 24 declined impo...  -1.171526   
+3  QCSW62YS.doc  D0-CF-11-E0-A1-B1-1A-E1 becoming period begin ...   1.180519   
+4  AU75JV6U.jpg                                              FF-D8  -2.991356   
+
+   off_hours_file_access  
+0               2.226033  
+1               2.226033  
+2              -0.449230  
+3              -0.449230  
+4              -0.449230  
+
+Psychometric Data after Preprocessing:
+             employee_name  user_id         O         C         E         A  \
+0         Calvin Edan Love  CEL0561  0.586076  0.719944  0.604629 -0.815976   
+1  Christine Reagan Deleon  CRD0624 -0.777528 -0.834999 -1.160802  0.965542   
+2    Jade Felicia Caldwell  JFC0557 -1.167129 -1.383802 -0.603298  1.054618   
+3   Aquila Stewart Dejesus  ASD0577  0.586076  1.543149  0.604629 -1.261356   
+4        Micah Abdul Rojas  MAR0955  0.196475  1.177280 -0.603298  1.410922   
+
+          N  
+0  2.123155  
+1  0.552864  
+2  0.749150  
+3  1.534296  
+4 -0.821141  
+
+Combined DataFrame:
+             employee_name     user         O         C         E         A  \
+0         Calvin Edan Love  CEL0561  0.586076  0.719944  0.604629 -0.815976   
+1  Christine Reagan Deleon  CRD0624 -0.777528 -0.834999 -1.160802  0.965542   
+2    Jade Felicia Caldwell  JFC0557 -1.167129 -1.383802 -0.603298  1.054618   
+3   Aquila Stewart Dejesus  ASD0577  0.586076  1.543149  0.604629 -1.261356   
+4        Micah Abdul Rojas  MAR0955  0.196475  1.177280 -0.603298  1.410922   
+
+          N  logon_count  email_count  device_count  file_count  \
+0  2.123155          0.0          0.0           0.0         0.0   
+1  0.552864          0.0          0.0           0.0         0.0   
+2  0.749150          0.0          0.0           0.0         0.0   
+3  1.534296          0.0          0.0           0.0         0.0   
+4 -0.821141          0.0          0.0           0.0         0.0   
+
+   off_hours_logon  email_length  off_hours_email  off_hours_connection  \
+0              0.0           0.0              0.0                   0.0   
+1              0.0           0.0              0.0                   0.0   
+2              0.0           0.0              0.0                   0.0   
+3              0.0           0.0              0.0                   0.0   
+4              0.0           0.0              0.0                   0.0   
+
+   file_size  off_hours_file_access  
+0        0.0                    0.0  
+1        0.0                    0.0  
+2        0.0                    0.0  
+3        0.0                    0.0  
+4        0.0                    0.0  
+
+Combined DataFrame with Anomaly Scores:
+             employee_name     user         O         C         E         A  \
+0         Calvin Edan Love  CEL0561  0.586076  0.719944  0.604629 -0.815976   
+1  Christine Reagan Deleon  CRD0624 -0.777528 -0.834999 -1.160802  0.965542   
+2    Jade Felicia Caldwell  JFC0557 -1.167129 -1.383802 -0.603298  1.054618   
+3   Aquila Stewart Dejesus  ASD0577  0.586076  1.543149  0.604629 -1.261356   
+4        Micah Abdul Rojas  MAR0955  0.196475  1.177280 -0.603298  1.410922   
+
+          N  logon_count  email_count  device_count  file_count  \
+0  2.123155          0.0          0.0           0.0         0.0   
+1  0.552864          0.0          0.0           0.0         0.0   
+2  0.749150          0.0          0.0           0.0         0.0   
+3  1.534296          0.0          0.0           0.0         0.0   
+4 -0.821141          0.0          0.0           0.0         0.0   
+
+   off_hours_logon  email_length  off_hours_email  off_hours_connection  \
+0              0.0           0.0              0.0                   0.0   
+1              0.0           0.0              0.0                   0.0   
+2              0.0           0.0              0.0                   0.0   
+3              0.0           0.0              0.0                   0.0   
+4              0.0           0.0              0.0                   0.0   
+
+   file_size  off_hours_file_access  anomaly_score  is_anomaly  
+0        0.0                    0.0       0.204448           1  
+1        0.0                    0.0       0.189328           1  
+2        0.0                    0.0       0.179478           1  
+3        0.0                    0.0       0.185096           1  
+4        0.0                    0.0       0.201091           1  
+
+Number of Anomalies Detected: 18
+
+Anomalous Users:
+             employee_name     user         O         C         E         A  \
+10      Devin Abdul Rogers  DAR0885  0.878277  1.085813  1.347968  1.143694   
+59    Arthur Lucian Bonner  ALB0892 -0.874928 -1.109401  1.347968 -0.548749   
+85   Emerald Imani Schmidt  EIS0041  0.683477  1.177280 -1.160802  1.767226   
+95    Bruno Donovan Ingram  BDI0533  0.293875  0.445542 -1.346637  1.143694   
+123   Hadassah Leah Harris  HLH0512 -1.848931  0.994346  0.604629 -0.548749   
+129       Holmes Arden Day  HAD0246  0.975677  0.719944  0.232959  1.499998   
+131    Leslie Briar Fields  LBF0214 -1.556730  1.177280 -1.067885  0.876466   
+150      Arthur John Floyd  AJF0370  0.293875  0.171141 -1.718307 -1.172280   
+175      Nissim Gil French  NGF0157  1.073078  0.628477 -0.696215  1.589074   
+181  Orson Barrett Houston  OBH0499  0.099075 -1.200868  1.069216 -1.083204   
+184  Nicole Aurelia Hanson  NAH0503 -0.095726 -1.292335 -0.603298  0.609238   
+195  Ignatius Reese Morton  IRM0931  0.975677  1.360215  0.325877  0.609238   
+229       Lyle Brady Hayes  LBH0942  0.586076  0.994346 -0.603298  0.163859   
+300    Willow Iliana Quinn  WIQ0567 -0.874928  0.902879 -1.811224  1.678150   
+304        Robert Ali Webb  RAW0915  0.878277  1.726084 -0.789133  1.321846   
+318  Gareth Thomas Dickson  GTD0219  0.586076  0.811411 -0.974967  0.163859   
+338     Keane Kennan Watts  KKW0879  0.196475  0.994346 -0.789133  0.252935   
+347     Dante Raja Roberts  DRR0162  1.073078  0.445542 -0.882050  0.698314   
+
+            N  logon_count  email_count  device_count  file_count  \
+10  -0.821141          4.0          3.0           0.0         0.0   
+59   0.160291          4.0          3.0           0.0         0.0   
+85   0.160291          6.0          0.0           8.0         7.0   
+95  -1.998859          6.0          3.0           2.0         3.0   
+123  0.552864          4.0          3.0           0.0         0.0   
+129  1.730582          6.0         10.0           2.0         2.0   
+131 -0.232282          4.0          0.0           4.0         3.0   
+150  1.338010          0.0          0.0           4.0         6.0   
+175  0.552864          3.0          9.0           0.0         0.0   
+181  0.945437          3.0          0.0          16.0         2.0   
+184  1.730582          2.0         15.0           0.0         0.0   
+195  0.160291          8.0          9.0           2.0         4.0   
+229 -0.035995          3.0          0.0          20.0        34.0   
+300  1.926869          3.0          0.0           2.0         8.0   
+304 -1.017427          3.0          8.0           4.0         0.0   
+318  0.749150          2.0          0.0           4.0         6.0   
+338 -0.428568          0.0          0.0           2.0         1.0   
+347 -0.035995          0.0          0.0           2.0         1.0   
+
+     off_hours_logon  email_length  off_hours_email  off_hours_connection  \
+10         -0.848064     -0.126128        -0.265617              0.000000   
+59         -0.848064      0.119395        -0.265617              0.000000   
+85          1.179157      0.000000         0.000000              2.194691   
+95         -0.848064      0.785814        -0.265617             -0.455645   
+123        -0.848064      0.224619        -0.265617              0.000000   
+129        -0.172323      0.119395        -0.265617             -0.455645   
+131        -0.341258      0.000000         0.000000             -0.455645   
+150         0.000000      0.000000         0.000000              2.194691   
+175        -0.172323     -0.582099        -0.265617              0.000000   
+181        -0.848064      0.000000         0.000000             -0.455645   
+184        -0.848064      0.168499        -0.265617              0.000000   
+195        -0.341258     -0.278118        -0.265617             -0.455645   
+229        -0.172323      0.000000         0.000000              0.206939   
+300        -0.848064      0.000000         0.000000             -0.455645   
+304        -0.172323     -0.051594        -0.265617             -0.455645   
+318         1.179157      0.000000         0.000000              2.194691   
+338         0.000000      0.000000         0.000000              0.869523   
+347         0.000000      0.000000         0.000000              0.869523   
+
+     file_size  off_hours_file_access  anomaly_score  is_anomaly  
+10    0.000000               0.000000      -0.020486          -1  
+59    0.000000               0.000000      -0.039675          -1  
+85   -0.628275               2.226033      -0.131503          -1  
+95   -0.882528              -0.449230      -0.111627          -1  
+123   0.000000               0.000000      -0.046939          -1  
+129   0.819986              -0.449230      -0.118359          -1  
+131   0.768482              -0.449230      -0.061674          -1  
+150   0.353583               2.226033      -0.080694          -1  
+175   0.000000               0.000000      -0.011486          -1  
+181  -0.695108              -0.449230      -0.108706          -1  
+184   0.000000               0.000000      -0.069857          -1  
+195  -0.628581              -0.449230      -0.122824          -1  
+229   0.180976               0.573665      -0.094263          -1  
+300   0.167594              -0.449230      -0.064095          -1  
+304   0.000000               0.000000      -0.057988          -1  
+318  -0.487659               2.226033      -0.091409          -1  
+338   0.759898               2.226033      -0.000913          -1  
+347   1.343617               2.226033      -0.028070          -1  
